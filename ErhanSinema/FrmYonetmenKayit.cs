@@ -157,5 +157,10 @@ namespace ErhanSinema
         {
 
         }
+
+        private void FrmYonetmenKayit_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

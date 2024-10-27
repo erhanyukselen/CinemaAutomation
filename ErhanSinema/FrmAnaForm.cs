@@ -36,5 +36,12 @@ namespace ErhanSinema
 
            
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FrmYonetmenListesi frm = new FrmYonetmenListesi();
+
+            frm.ShowDialog();
+        }
     }
 }
