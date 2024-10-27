@@ -46,22 +46,22 @@
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnUploadPhoto = new System.Windows.Forms.Button();
-            this.pbPhoto = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.lblCharCount = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.txtBiography = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.lblCharCount = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
+            this.pbPhoto = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nYear)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nMonth)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nDay)).BeginInit();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbPhoto)).BeginInit();
             this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPhoto)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -302,16 +302,6 @@
             this.btnUploadPhoto.UseVisualStyleBackColor = false;
             this.btnUploadPhoto.Click += new System.EventHandler(this.btnUploadPhoto_Click);
             // 
-            // pbPhoto
-            // 
-            this.pbPhoto.Image = ((System.Drawing.Image)(resources.GetObject("pbPhoto.Image")));
-            this.pbPhoto.Location = new System.Drawing.Point(26, 56);
-            this.pbPhoto.Name = "pbPhoto";
-            this.pbPhoto.Size = new System.Drawing.Size(266, 135);
-            this.pbPhoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbPhoto.TabIndex = 9;
-            this.pbPhoto.TabStop = false;
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -335,6 +325,25 @@
             this.groupBox3.TabIndex = 5;
             this.groupBox3.TabStop = false;
             // 
+            // lblCharCount
+            // 
+            this.lblCharCount.Location = new System.Drawing.Point(630, 157);
+            this.lblCharCount.Name = "lblCharCount";
+            this.lblCharCount.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblCharCount.Size = new System.Drawing.Size(37, 21);
+            this.lblCharCount.TabIndex = 8;
+            this.lblCharCount.Text = "300";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.label7.Location = new System.Drawing.Point(535, 16);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(132, 21);
+            this.label7.TabIndex = 7;
+            this.label7.Text = "(max length 300)";
+            // 
             // txtBiography
             // 
             this.txtBiography.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -357,25 +366,6 @@
             this.label9.TabIndex = 5;
             this.label9.Text = "Biography";
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label7.Location = new System.Drawing.Point(535, 16);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(132, 21);
-            this.label7.TabIndex = 7;
-            this.label7.Text = "(max length 300)";
-            // 
-            // lblCharCount
-            // 
-            this.lblCharCount.AutoSize = true;
-            this.lblCharCount.Location = new System.Drawing.Point(631, 157);
-            this.lblCharCount.Name = "lblCharCount";
-            this.lblCharCount.Size = new System.Drawing.Size(37, 21);
-            this.lblCharCount.TabIndex = 8;
-            this.lblCharCount.Text = "300";
-            // 
             // btnSave
             // 
             this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(110)))), ((int)(((byte)(122)))));
@@ -391,6 +381,17 @@
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // pbPhoto
+            // 
+            this.pbPhoto.Image = ((System.Drawing.Image)(resources.GetObject("pbPhoto.Image")));
+            this.pbPhoto.Location = new System.Drawing.Point(26, 56);
+            this.pbPhoto.Name = "pbPhoto";
+            this.pbPhoto.Size = new System.Drawing.Size(266, 135);
+            this.pbPhoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbPhoto.TabIndex = 9;
+            this.pbPhoto.TabStop = false;
+            this.pbPhoto.Click += new System.EventHandler(this.pbPhoto_Click);
             // 
             // FrmYonetmenKayit
             // 
@@ -419,9 +420,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.nDay)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbPhoto)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPhoto)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -445,7 +446,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.NumericUpDown nYear;
         private System.Windows.Forms.Button btnUploadPhoto;
-        private System.Windows.Forms.PictureBox pbPhoto;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label7;
@@ -453,5 +453,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label lblCharCount;
         private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.PictureBox pbPhoto;
     }
 }
